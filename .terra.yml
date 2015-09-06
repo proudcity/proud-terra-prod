@@ -15,6 +15,8 @@ hooks:
 
     cd ../../sites/all/modules
     mkdir apps
+    mkdir dev
+    mkdir contrib
     cd apps
     git clone git@github.com:proudcity/proud_faq.git
     git clone git@github.com:proudcity/proud_event.git
@@ -26,16 +28,16 @@ hooks:
     git clone git@github.com:proudcity/proud_document.git
     git clone git@github.com:proudcity/proud_social.git
     git clone git@github.com:proudcity/proud_search.git
-    mkdir ../dev
     cd ../dev
     git clone --branch 7.x-1.x http://git.drupal.org/project/angular_media.git
     git clone --branch 7.x-1.x http://git.drupal.org/project/media_formatters.git
     git clone --branch 7.x-1.x http://git.drupal.org/project/ckeditor_widgets.git
+    git clone --branch 7.x-1.x http://git.drupal.org/project/ckeditor_filter.git
+    git clone --branch 7.x-1.x http://git.drupal.org/sandbox/jlyon/socialfield_widgets.git social_field_widgets
+
     mkdir ../../themes/dev
     cd ../../themes/dev
     git clone --branch 7.x-1.x http://git.drupal.org/project/minimalist_admin.git
 
-    drush site-install 
-    drush {{alias}} site-install proud --db-url=mysql://drupal:drupal@database/drupal -y
-
   enable_first: |
+    drush {{alias}} site-install proud --db-url=mysql://drupal:drupal@database/drupal -y
