@@ -11,6 +11,10 @@ Requirements:
 * Drush
 * [drupalorg_drush](https://www.drupal.org/project/drupalorg_drush)
 
+Note:
+* You probably will want to edit the `./git/config` files in `sites/all/modules/dev` to include your username
+(change from `http://` to `jlyon@`).
+
 Read more:
 * [Drupal project page](http://drupal.org/project/proud)
 * [More about Proud City](http://getproudcity.com)
