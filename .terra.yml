@@ -35,6 +35,7 @@ hooks:
     git clone --branch 7.x-1.x http://git.drupal.org/project/ckeditor_filter.git
     git clone --branch 7.x-1.x http://git.drupal.org/sandbox/jlyon/socialfield_widgets.git social_field_widgets
     git clone --branch 7.x-1.x http://git.drupal.org/sandbox/jlyon/2564675.git google_analytics_embed
+    git clone --branch 7.x-1.x http://git.drupal.org/sandbox/jlyon/2564689.git bootstrap_fieldable_panel_panes
 
     mkdir ../../themes/dev
     cd ../../themes/dev
