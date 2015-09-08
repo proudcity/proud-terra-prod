@@ -8,7 +8,7 @@ hooks:
     mv drupal-7.39 www
 
     cd www/profiles
-    git clone git@github.com:proudcity/proud.git
+    git clone https://github.com/proudcity/proud.git
     cd proud
     drush verify-makefile drupal-org.make
     drush make --no-cache --drupal-org drupal-org.make .
@@ -18,16 +18,16 @@ hooks:
     mkdir dev
     mkdir contrib
     cd apps
-    git clone git@github.com:proudcity/proud_faq.git
-    git clone git@github.com:proudcity/proud_event.git
-    git clone git@github.com:proudcity/proud_landingpage.git
-    git clone git@github.com:proudcity/proud_news.git
-    git clone git@github.com:proudcity/proud_webform.git
-    git clone git@github.com:proudcity/proud_people.git
-    git clone git@github.com:proudcity/proud_agency.git
-    git clone git@github.com:proudcity/proud_document.git
-    git clone git@github.com:proudcity/proud_social.git
-    git clone git@github.com:proudcity/proud_search.git
+    git clone https://github.com/proudcity/proud_faq.git
+    git clone https://github.com/proudcity/proud_event.git
+    git clone https://github.com/proudcity/proud_landingpage.git
+    git clone https://github.com/proudcity/proud_news.git
+    git clone https://github.com/proudcity/proud_webform.git
+    git clone https://github.com/proudcity/proud_people.git
+    git clone https://github.com/proudcity/proud_agency.git
+    git clone https://github.com/proudcity/proud_document.git
+    git clone https://github.com/proudcity/proud_social.git
+    git clone https://github.com/proudcity/proud_search.git
     cd ../dev
     git clone --branch 7.x-1.x http://git.drupal.org/project/angular_media.git
     git clone --branch 7.x-1.x http://git.drupal.org/project/media_formatters.git
