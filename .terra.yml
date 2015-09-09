@@ -17,6 +17,7 @@ hooks:
     mkdir apps
     mkdir dev
     mkdir contrib
+    mkdir custom
     cd apps
     git clone https://github.com/proudcity/proud_faq.git
     git clone https://github.com/proudcity/proud_event.git
@@ -36,6 +37,8 @@ hooks:
     git clone --branch 7.x-1.x http://git.drupal.org/sandbox/jlyon/socialfield_widgets.git social_field_widgets
     git clone --branch 7.x-1.x http://git.drupal.org/sandbox/jlyon/2564675.git google_analytics_embed
     git clone --branch 7.x-1.x http://git.drupal.org/sandbox/jlyon/2564689.git bootstrap_fieldable_panel_panes
+    cd ../custom
+    #git@github.com:proudcity/proudcity_demo.git
 
     mkdir ../../themes/dev
     cd ../../themes/dev
