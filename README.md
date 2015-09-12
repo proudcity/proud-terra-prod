@@ -19,3 +19,10 @@ Read more:
 * [Drupal project page](http://drupal.org/project/proud)
 * [More about Proud City](http://getproudcity.com)
 
+
+Running tests
+```
+java -jar tests/bin/selenium-server-*.jar
+terra e:test proud local
+
+```
