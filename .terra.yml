@@ -1,4 +1,5 @@
 document_root: www
+behat_path: tests
 docker_compose:
   overrides:
 
