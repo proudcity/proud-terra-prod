@@ -46,4 +46,4 @@ hooks:
     git clone --branch 7.x-1.x http://git.drupal.org/project/minimalist_admin.git
 
   enable_first: |
-    drush {{alias}} site-install proud --db-url=mysql://drupal:drupal@database/drupal --sites-subdir=default -y
+    #drush {{alias}} site-install proud --db-url=mysql://drupal:drupal@database/drupal --sites-subdir=default -y
