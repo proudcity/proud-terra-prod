@@ -16,7 +16,7 @@ hooks:
 
     cd ../../sites/all/modules
     mkdir apps
-    mkdir dev
+    #mkdir dev
     mkdir contrib
     mkdir custom
     cd apps
@@ -30,20 +30,23 @@ hooks:
     git clone https://github.com/proudcity/proud_document.git
     git clone https://github.com/proudcity/proud_social.git
     git clone https://github.com/proudcity/proud_search.git
-    cd ../dev
-    git clone --branch 7.x-1.x http://git.drupal.org/project/angular_media.git
-    git clone --branch 7.x-1.x http://git.drupal.org/project/media_formatters.git
-    git clone --branch 7.x-1.x http://git.drupal.org/project/ckeditor_widgets.git
-    git clone --branch 7.x-1.x http://git.drupal.org/project/ckeditor_filter.git
-    git clone --branch 7.x-1.x http://git.drupal.org/sandbox/jlyon/socialfield_widgets.git social_field_widgets
-    git clone --branch 7.x-1.x http://git.drupal.org/sandbox/jlyon/2564675.git google_analytics_embed
-    git clone --branch 7.x-1.x http://git.drupal.org/sandbox/jlyon/2564689.git bootstrap_fieldable_panel_panes
+    #cd ../dev
+    #git clone --branch 7.x-1.x http://git.drupal.org/project/angular_media.git
+    #git clone --branch 7.x-1.x http://git.drupal.org/project/media_formatters.git
+    #git clone --branch 7.x-1.x http://git.drupal.org/project/ckeditor_widgets.git
+    #git clone --branch 7.x-1.x http://git.drupal.org/project/ckeditor_filter.git
+    #git clone --branch 7.x-1.x http://git.drupal.org/sandbox/jlyon/socialfield_widgets.git social_field_widgets
+    #git clone --branch 7.x-1.x http://git.drupal.org/sandbox/jlyon/2564675.git google_analytics_embed
+    #git clone --branch 7.x-1.x http://git.drupal.org/sandbox/jlyon/2564689.git bootstrap_fieldable_panel_panes
     cd ../custom
     #git@github.com:proudcity/proudcity_demo.git
 
     mkdir ../../themes/dev
     cd ../../themes/dev
-    git clone --branch 7.x-1.x http://git.drupal.org/project/minimalist_admin.git
+    #git clone --branch 7.x-1.x http://git.drupal.org/project/minimalist_admin.git
+
+    cd ../../../../
+    rm *.git
 
   enable_first: |
     #drush {{alias}} site-install proud --db-url=mysql://drupal:drupal@database/drupal --sites-subdir=default -y
