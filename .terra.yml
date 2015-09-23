@@ -5,20 +5,13 @@ docker_compose:
 
 hooks:
   build: |
-    drush dl drupal-7.39
-    mv drupal-7.39 www
+    git clone https://github.com/proudcity/proud-drops.git www
 
-    cd www/profiles
-    git clone https://github.com/proudcity/proud.git
-    cd proud
-    drush verify-makefile drupal-org.make
-    drush make --no-cache --drupal-org drupal-org.make .
-
-    cd ../../sites/all/modules
+    cd sites/all/modules
     mkdir apps
     #mkdir dev
-    mkdir contrib
-    mkdir custom
+    #mkdir contrib
+    #mkdir custom
     cd apps
     git clone https://github.com/proudcity/proud_faq.git
     git clone https://github.com/proudcity/proud_event.git
@@ -45,8 +38,5 @@ hooks:
     cd ../../themes/dev
     #git clone --branch 7.x-1.x http://git.drupal.org/project/minimalist_admin.git
 
-    cd ../../../../
-    rm *.git
-
   enable_first: |
-    #drush {{alias}} site-install proud --db-url=mysql://drupal:drupal@database/drupal --sites-subdir=default -y
+    drush {{alias}} site-install proud --db-url=mysql://drupal:drupal@database/drupal --sites-subdir=default -y

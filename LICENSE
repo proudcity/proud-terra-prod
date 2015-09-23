@@ -11,7 +11,11 @@ modification, are permitted provided that the following conditions are met:
   this list of conditions and the following disclaimer in the documentation
   and/or other materials provided with the distribution.
 
+<<<<<<< HEAD
 * Neither the name of proud-terra-drops-build nor the names of its
+=======
+* Neither the name of proud-terra-prod nor the names of its
+>>>>>>> dfb0a7b761bb81a6d2779622a21f60d878867f39
   contributors may be used to endorse or promote products derived from
   this software without specific prior written permission.
 
