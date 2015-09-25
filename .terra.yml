@@ -7,7 +7,7 @@ hooks:
   build: |
     git clone https://github.com/proudcity/proud-drops.git www
 
-    cd sites/all/modules
+    cd www/sites/all/modules
     mkdir apps
     #mkdir dev
     #mkdir contrib
