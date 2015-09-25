@@ -31,11 +31,11 @@ hooks:
     #git clone --branch 7.x-1.x http://git.drupal.org/sandbox/jlyon/socialfield_widgets.git social_field_widgets
     #git clone --branch 7.x-1.x http://git.drupal.org/sandbox/jlyon/2564675.git google_analytics_embed
     #git clone --branch 7.x-1.x http://git.drupal.org/sandbox/jlyon/2564689.git bootstrap_fieldable_panel_panes
-    cd ../custom
+    #cd ../custom
     #git@github.com:proudcity/proudcity_demo.git
 
-    mkdir ../../themes/dev
-    cd ../../themes/dev
+    mkdir ../../../../
+    mkdir sites/all/themes/custom
     #git clone --branch 7.x-1.x http://git.drupal.org/project/minimalist_admin.git
 
   enable_first: |
