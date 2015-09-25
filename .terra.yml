@@ -34,7 +34,7 @@ hooks:
     #cd ../custom
     #git@github.com:proudcity/proudcity_demo.git
 
-    mkdir ../../../../
+    cd ../../../../
     mkdir sites/all/themes/custom
     #git clone --branch 7.x-1.x http://git.drupal.org/project/minimalist_admin.git
 
