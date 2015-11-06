@@ -13,16 +13,8 @@ hooks:
     #mkdir contrib
     #mkdir custom
     cd apps
-    git clone https://github.com/proudcity/proud_faq.git
-    git clone https://github.com/proudcity/proud_event.git
-    git clone https://github.com/proudcity/proud_landingpage.git
-    git clone https://github.com/proudcity/proud_news.git
-    git clone https://github.com/proudcity/proud_webform.git
-    git clone https://github.com/proudcity/proud_people.git
-    git clone https://github.com/proudcity/proud_agency.git
-    git clone https://github.com/proudcity/proud_document.git
-    git clone https://github.com/proudcity/proud_social.git
-    git clone https://github.com/proudcity/proud_search.git
+    git clone --branch 7.x-1.x https://github.com/proudcity/proud_311_app.git
+    git clone --branch 7.x-1.x https://github.com/proudcity/proud_map_app.git
     #cd ../dev
     #git clone --branch 7.x-1.x http://git.drupal.org/project/angular_media.git
     #git clone --branch 7.x-1.x http://git.drupal.org/project/media_formatters.git
